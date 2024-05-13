@@ -1,0 +1,354 @@
+/*======== GERAL =========*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'arial';
+	font-size: 62.5%;
+	background-color: #404040;
+}
+
+.container {
+	max-width: 1152px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*======== CABEÇALHO =========*/
+
+.container h1 a img{
+	margin-top: 20px;
+}
+
+header {
+	background: #202120;
+	padding: 10px 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+ul.principal {
+	margin: 36px 0 0 0;
+	padding: 0;
+	list-style: none;
+	font-size: 1.6em;
+}
+
+li.emLinha {
+	display: inline;
+	padding: 0;
+	margin: 0 16px 0 0;
+}
+
+li.emLinha:last-child {
+	margin: 0;
+}
+
+li.emLinha a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+li.emLinha a:hover {
+	color: #30E540;
+	transition: color 0.3s;
+}
+
+li.emLinha a span {
+	color: white;
+	font-size: 1.4em;
+	display: inline-block;
+	transform: rotate(0deg);
+	transition: transform 0.1s;
+}
+
+li.emLinha:hover a span {
+	transform: rotate(180deg);
+}
+
+ul.oculto {
+	visibility: hidden;
+	background: #fff;
+	border: solid 1px #000;
+	border-radius: 5px;
+	list-style: none;
+	position: absolute;
+	padding: 5px 10px;
+	margin-left: 60px;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: opacity 0.2s, transform 0.3s;
+}
+
+li.emLinha:hover ul.oculto {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+ul.oculto li {
+	padding: 5px 0;
+}
+
+ul.oculto li a {
+	color: #000;
+}
+
+/*======== SEÇÃO 1 =========*/
+
+.blocoFigura {
+	width: 32.11805555555556%;
+	margin: 50px 1.82291666666667% 0 0;
+}
+
+.blocoFigura:last-child {
+	margin: 50px 0 0 0;
+}
+
+.blocoFigura figure {
+	margin: 0;
+}
+
+.blocoFigura figure img {
+	max-width: 100%;
+}
+
+.blocoFigura h2 {
+	margin: 5px 0 0 0;
+	text-align: center;
+	font-size: 2.8em;
+}
+
+.blocoFigura h3 a {
+	margin: 10px 0 0 0;
+	font-size: 1.8em;
+	color: #C1C8C2;
+}
+
+.blocoFigura a {
+	text-decoration: none;
+	color: #FFF;
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+.blocoFigura a:hover {
+	opacity: 0.7;
+	transition: opacity 0.2s;
+}
+
+/*======== SEÇÃO 2 =========*/
+
+.margemSecao2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.secao2h3 {
+	margin: 0 auto;
+	font-size: 3.6em;
+	color: #fff;
+}
+
+/*======== SEÇÃO 3 =========*/
+
+article {
+	width: 49%;
+	margin-right: 2%;
+}
+
+article:last-child {
+	margin-right: 0;
+}
+
+article p {
+	text-align: justify;
+	font-size: 1.6em;
+	color: #fff;
+}
+
+/*======== RODAPÉ =========*/
+
+footer {
+	background: #202120;
+	padding: 30px 0;
+	margin-top: 20px;
+}
+
+.divRodape {
+	width: 24.21875%;
+	margin-right: 1.04166666666667%;
+}
+
+.divRodape:last-child {
+	margin-right: 0;
+}
+
+/*.divRodape:nth-child(odd) {
+	background: darkblue;
+}
+
+.divRodape:nth-child(even) {
+	background: darkgreen;
+}*/
+
+.divImagem {
+	text-align: center;
+}
+
+.divImagem img {
+	margin-bottom: 30px;
+}
+
+.divImagem img:last-child {
+	margin-bottom: 0;
+}
+
+.divRodapeImagem {
+	margin-bottom: 36px;
+}
+
+.divRodape p {
+	color: #BDC3DC;
+	margin: 0 0 30px 0;
+	font-size: 1.6em;
+}
+
+.divRodape p:last-child {
+	margin-bottom: 0;
+}
+
+.divRodape p.pLink {
+	font-weight: bold;
+	color: #FFF;
+}
+
+.divRodape p.pMargem {
+	margin-bottom: 5px;
+}
+
+.divRodape p:first-child {
+	margin-top: 100px;
+}
+
+.divSvg {
+	margin-right: 15px;
+	margin-bottom: 60px;
+}
+
+.divSvg:last-child {
+	margin-right: 0;
+}
+
+/*======== INTERNAS =========*/
+
+.interna {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.legenda {
+	width: 50%;
+	text-align: justify;
+	font-size: 2.0em;
+	margin: 0;
+}
+
+.figuraLegenda {
+	width: 48%;
+	margin: 0;
+}
+
+.figuraLegenda img {
+	max-width: 100%;
+}
+
+/*======== CONTATO =========*/
+
+.mapa {
+	width: 100%;
+	height: 450px;
+	border: none;
+	margin: 0 0 50px 0;
+}
+
+form {
+	width: 100%;
+	font-size: 1.6em;
+}
+
+.blocoFormPrincipal {
+	display: block;
+	width: 100%;
+}
+
+.divFormInline {
+	display: inline-block;
+	width: 49.5%;
+	margin: 5px 0;
+}
+
+.divFormInline input[type="text"], .divFormInline input[type="number"], .divFormInline input[type="email"], .divFormInline input[type="password"] {
+	background: #73e1fa;
+	padding: 5px;
+	font-size: 1.6em;
+	border: none;
+	width: 98%;
+	box-shadow: 2px 2px 2px #8E8E8E;
+}
+
+.divFormTextarea {
+	display: inline-block;
+	width: 99%;
+	margin: 10px 0;
+}
+
+.divFormTextarea textarea {
+	background: #73e1fa;
+	padding: 5px;
+	font-size: 1.6em;
+	border: none;
+	width: 99.4%;
+	height: 200px;
+	font-family: 'arial';
+	box-shadow: 2px 2px 2px #8E8E8E;
+}
+
+.divFormInline input[type="submit"] {
+	cursor: pointer;
+	background: #103440;
+	color: #fff;
+	padding: 5px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #8E8E8E;
+	margin: 0 0 10px 0;
+	transition: background 0.3s;
+}
+
+.divFormInline input[type="submit"]:hover {
+	transition: background 0.3s;
+	background: #e69383;
+}
+
+/*======== MEDIA QUERIES =========*/
+
+/*@media screen and (max-width: 960px) {
+	.container {
+		background: red;
+	}
+}
+
+@media screen and (max-width: 724px) {
+	
+}
+
+@media screen and (max-width: 540px) {
+	
+}*/
